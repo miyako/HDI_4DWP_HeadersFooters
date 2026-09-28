@@ -1,2 +1,3 @@
 //%attributes = {"invisible":true}
-C_BOOLEAN:C305(<>Quit)
+  // <>Quit was removed: it was an unused interprocess variable.
+  // Quit state is now tracked via Form.quit (see startup modernization).

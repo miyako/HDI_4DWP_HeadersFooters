@@ -1,34 +1,6 @@
 //%attributes = {"invisible":true}
-C_LONGINT:C283(Demo)
-C_LONGINT:C283(rfooter0)
-C_LONGINT:C283(rfooter1)
-C_LONGINT:C283(rfooter2)
-C_LONGINT:C283(rfooter3)
-C_LONGINT:C283(rfooter4)
-C_LONGINT:C283(rFrame0)
-C_LONGINT:C283(rFrame1)
-C_LONGINT:C283(rFrame10)
-C_LONGINT:C283(rFrame2)
-C_LONGINT:C283(rFrame3)
-C_LONGINT:C283(rFrame4)
-C_LONGINT:C283(rFrame5)
-C_LONGINT:C283(rFrame6)
-C_LONGINT:C283(rFrame7)
-C_LONGINT:C283(rFrame8)
-C_LONGINT:C283(rFrame9)
-C_LONGINT:C283(rheader0)
-C_LONGINT:C283(rheader1)
-C_LONGINT:C283(rheader2)
-C_LONGINT:C283(rheader3)
-C_LONGINT:C283(rheader4)
+var Demo; rfooter0; rfooter1; rfooter2; rfooter3; rfooter4; rFrame0; rFrame1; rFrame10; rFrame2; rFrame3; rFrame4; rFrame5; rFrame6; rFrame7; rFrame8; rFrame9; rheader0; rheader1; rheader2; rheader3; rheader4 : Integer
 
-C_OBJECT:C1216(vBodyRange)
-C_OBJECT:C1216(vFooterRange)
-C_OBJECT:C1216(vHeaderRange)
-C_OBJECT:C1216(vRange)
-C_OBJECT:C1216(WParea)
-C_OBJECT:C1216(wp_emptyFinal)
-C_OBJECT:C1216(wp_final)
-C_OBJECT:C1216(wp_template)
+var vBodyRange; vFooterRange; vHeaderRange; vRange; WParea; wp_emptyFinal; wp_final; wp_template : Object
 
-C_TEXT:C284(vRecNum)
+var vRecNum : Text

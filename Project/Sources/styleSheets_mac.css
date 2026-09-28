@@ -14,3 +14,26 @@
 	font-weight: bold;
 }
 
+/* Liquid Glass (macOS Tahoe+) button height: 27px triggers the rounded
+   variant. Defined on both selectors since the compound selector alone is
+   not always matched reliably at runtime. */
+@media (form-theme: liquid-glass) {
+	.default1 {
+		height: 27px;
+	}
+
+	button.default1 {
+		height: 27px;
+	}
+}
+
+@media (form-theme: mac-classic) {
+	.default1 {
+		height: 23px;
+	}
+
+	button.default1 {
+		height: 23px;
+	}
+}
+

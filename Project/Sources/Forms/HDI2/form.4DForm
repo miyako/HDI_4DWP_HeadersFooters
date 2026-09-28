@@ -35,10 +35,10 @@
 					"sizingY": "grow",
 					"dataSourceTypeHint": "arrayText",
 					"labels": [
-						"Info",
-						"User story",
-						"Headers & Footers",
-						"Frames"
+						":xliff:HDI2_TabInfo",
+						":xliff:HDI2_TabUserStory",
+						":xliff:HDI2_TabHeadersFooters",
+						":xliff:HDI2_TabFrames"
 					],
 					"action": "gotoPage",
 					"events": [
@@ -77,16 +77,16 @@
 					"top": 842,
 					"left": 20,
 					"width": 70,
-					"height": 20,
 					"visibility": "hidden",
-					"text": "Save",
+					"text": ":xliff:HDI2_Save",
 					"fontStyle": "italic",
 					"stroke": "#FF6347",
 					"focusable": false,
 					"method": "ObjectMethods/wpAreaSave.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default1"
 				},
 				"wpAreaPop": {
 					"type": "dropdown",
@@ -109,7 +109,8 @@
 					"width": 110,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Example:"
+					"text": ":xliff:HDI2_Example",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -121,9 +122,8 @@
 					"left": 181,
 					"width": 841,
 					"height": 180,
-					"fill": "#E0E0E0",
-					"stroke": "#808080",
-					"borderRadius": 5
+					"borderRadius": 5,
+					"class": "hdi-panel-light"
 				},
 				"Round Rectangle": {
 					"type": "rectangle",
@@ -131,9 +131,8 @@
 					"left": 181,
 					"width": 841,
 					"height": 180,
-					"fill": "#E0E0E0",
-					"stroke": "#808080",
-					"borderRadius": 5
+					"borderRadius": 5,
+					"class": "hdi-panel-light"
 				},
 				"TxtInfo3": {
 					"type": "text",
@@ -144,7 +143,8 @@
 					"sizingX": "grow",
 					"class": "HDI",
 					"textAlign": "center",
-					"text": "Starting with 4D v16 R5, a new set of commands have been added to 4D Write Pro to manage HEADERS and FOOTERS by programming."
+					"text": ":xliff:HDI2_InfoIntro",
+					"stroke": "automatic"
 				},
 				"TxtInfo1": {
 					"type": "text",
@@ -155,7 +155,8 @@
 					"sizingX": "grow",
 					"class": "HDI",
 					"textAlign": "center",
-					"text": "WP Get header, WP Get body, WP Get footer"
+					"text": ":xliff:HDI2_InfoCommands1",
+					"stroke": "automatic"
 				},
 				"TxtInfo7": {
 					"type": "text",
@@ -166,7 +167,8 @@
 					"sizingX": "grow",
 					"class": "default",
 					"textAlign": "center",
-					"text": "These commands are used to retreive REFERENCES of headers, bodies and footers of DOCUMENTS or SECTIONS"
+					"text": ":xliff:HDI2_InfoDesc1",
+					"stroke": "automatic"
 				},
 				"TxtInfo2": {
 					"type": "text",
@@ -177,7 +179,8 @@
 					"sizingX": "grow",
 					"class": "HDI",
 					"textAlign": "center",
-					"text": "WP Get frame, WP SET FRAME"
+					"text": ":xliff:HDI2_InfoCommands2",
+					"stroke": "automatic"
 				},
 				"TxtInfo8": {
 					"type": "text",
@@ -188,7 +191,8 @@
 					"sizingX": "grow",
 					"class": "default",
 					"textAlign": "center",
-					"text": "These commands are used to get the FRAME (header, first header, body, first footer, etc.) where the CURSOR is currently in, or to set the CURSOR in a specific FRAME."
+					"text": ":xliff:HDI2_InfoDesc2",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -258,117 +262,117 @@
 					"top": 309,
 					"left": 446,
 					"width": 307,
-					"height": 20,
-					"text": "Copy header to header",
+					"text": ":xliff:HDI2_CopyHeaderToHeader",
 					"focusable": false,
 					"method": "ObjectMethods/Button5.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default1"
 				},
 				"Button3": {
 					"type": "button",
 					"top": 339,
 					"left": 446,
 					"width": 307,
-					"height": 20,
-					"text": "Copy header to body",
+					"text": ":xliff:HDI2_CopyHeaderToBody",
 					"focusable": false,
 					"method": "ObjectMethods/Button3.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default1"
 				},
 				"Button6": {
 					"type": "button",
 					"top": 369,
 					"left": 446,
 					"width": 307,
-					"height": 20,
-					"text": "Copy header to footer",
+					"text": ":xliff:HDI2_CopyHeaderToFooter",
 					"focusable": false,
 					"method": "ObjectMethods/Button6.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default1"
 				},
 				"Button8": {
 					"type": "button",
 					"top": 479,
 					"left": 446,
 					"width": 307,
-					"height": 20,
-					"text": "Copy body to header",
+					"text": ":xliff:HDI2_CopyBodyToHeader",
 					"focusable": false,
 					"method": "ObjectMethods/Button8.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default1"
 				},
 				"Button9": {
 					"type": "button",
 					"top": 509,
 					"left": 446,
 					"width": 307,
-					"height": 20,
-					"text": "Copy body to body",
+					"text": ":xliff:HDI2_CopyBodyToBody",
 					"focusable": false,
 					"method": "ObjectMethods/Button9.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default1"
 				},
 				"Button10": {
 					"type": "button",
 					"top": 539,
 					"left": 446,
 					"width": 307,
-					"height": 20,
-					"text": "Copy body to footer",
+					"text": ":xliff:HDI2_CopyBodyToFooter",
 					"focusable": false,
 					"method": "ObjectMethods/Button10.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default1"
 				},
 				"Button11": {
 					"type": "button",
 					"top": 649,
 					"left": 446,
 					"width": 307,
-					"height": 20,
-					"text": "Copy footer to header",
+					"text": ":xliff:HDI2_CopyFooterToHeader",
 					"focusable": false,
 					"method": "ObjectMethods/Button11.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default1"
 				},
 				"Button12": {
 					"type": "button",
 					"top": 679,
 					"left": 446,
 					"width": 307,
-					"height": 20,
-					"text": "Copy footer to body",
+					"text": ":xliff:HDI2_CopyFooterToBody",
 					"focusable": false,
 					"method": "ObjectMethods/Button12.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default1"
 				},
 				"Button13": {
 					"type": "button",
 					"top": 709,
 					"left": 446,
 					"width": 307,
-					"height": 20,
-					"text": "Copy footer to footer",
+					"text": ":xliff:HDI2_CopyFooterToFooter",
 					"focusable": false,
 					"method": "ObjectMethods/Button13.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default1"
 				},
 				"Text5": {
 					"type": "text",
@@ -378,7 +382,8 @@
 					"height": 17,
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "Template document"
+					"text": ":xliff:HDI2_TemplateDocument",
+					"stroke": "automatic"
 				},
 				"Text8": {
 					"type": "text",
@@ -388,7 +393,8 @@
 					"height": 17,
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "Final document"
+					"text": ":xliff:HDI2_FinalDocument",
+					"stroke": "automatic"
 				},
 				"TxtInfo4": {
 					"type": "text",
@@ -399,7 +405,8 @@
 					"sizingX": "grow",
 					"class": "HDI",
 					"textAlign": "left",
-					"text": "I have created a 4D WritePro template.\r\rThis template has a header and a footer.\r\r=> I want to be able to copy any frame of my template to any frame of a final document."
+					"text": ":xliff:HDI2_UserStory",
+					"stroke": "automatic"
 				},
 				"Picture1": {
 					"type": "picture",
@@ -422,7 +429,7 @@
 					"height": 270,
 					"sizingX": "move",
 					"fontWeight": "bold",
-					"text": "Header reference"
+					"text": ":xliff:HDI2_HeaderReference"
 				},
 				"Group Box5": {
 					"type": "groupBox",
@@ -433,7 +440,7 @@
 					"sizingX": "move",
 					"sizingY": "move",
 					"fontWeight": "bold",
-					"text": "Footer reference"
+					"text": ":xliff:HDI2_FooterReference"
 				},
 				"Group Box3": {
 					"type": "groupBox",
@@ -444,7 +451,7 @@
 					"sizingX": "move",
 					"sizingY": "grow",
 					"fontWeight": "bold",
-					"text": "WP Get body"
+					"text": ":xliff:HDI2_GroupGetBody"
 				},
 				"Group Box1": {
 					"type": "groupBox",
@@ -454,7 +461,7 @@
 					"height": 270,
 					"sizingX": "move",
 					"fontWeight": "bold",
-					"text": "WP Get header"
+					"text": ":xliff:HDI2_GroupGetHeader"
 				},
 				"WPwidget": {
 					"type": "subform",
@@ -477,14 +484,14 @@
 					"top": 837,
 					"left": 296,
 					"width": 78,
-					"height": 20,
 					"sizingY": "move",
-					"text": "Load",
+					"text": ":xliff:HDI2_Load",
 					"focusable": false,
 					"method": "ObjectMethods/Button2.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default1"
 				},
 				"Variable1": {
 					"type": "input",
@@ -510,14 +517,14 @@
 					"top": 442,
 					"left": 530,
 					"width": 224,
-					"height": 20,
 					"sizingX": "move",
-					"text": "Get body",
+					"text": ":xliff:HDI2_GetBody",
 					"focusable": false,
 					"method": "ObjectMethods/Button4.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default1"
 				},
 				"rheader0": {
 					"type": "radio",
@@ -527,7 +534,7 @@
 					"height": 20,
 					"sizingX": "move",
 					"dataSource": "rheader0",
-					"text": "main header",
+					"text": ":xliff:HDI2_RHeaderMain",
 					"focusable": false,
 					"radioGroup": "Group16",
 					"method": "ObjectMethods/rheader0.4dm",
@@ -543,7 +550,7 @@
 					"height": 20,
 					"sizingX": "move",
 					"dataSource": "rheader1",
-					"text": "wk first header",
+					"text": ":xliff:HDI2_RHeaderFirst",
 					"focusable": false,
 					"radioGroup": "Group16",
 					"method": "ObjectMethods/rheader1.4dm",
@@ -559,7 +566,7 @@
 					"height": 20,
 					"sizingX": "move",
 					"dataSource": "rheader2",
-					"text": "wk left header",
+					"text": ":xliff:HDI2_RHeaderLeft",
 					"focusable": false,
 					"radioGroup": "Group16",
 					"method": "ObjectMethods/rheader2.4dm",
@@ -575,7 +582,7 @@
 					"height": 20,
 					"sizingX": "move",
 					"dataSource": "rheader3",
-					"text": "wk right header",
+					"text": ":xliff:HDI2_RHeaderRight",
 					"focusable": false,
 					"radioGroup": "Group16",
 					"method": "ObjectMethods/rheader3.4dm",
@@ -591,7 +598,7 @@
 					"height": 20,
 					"sizingX": "move",
 					"dataSource": "rheader4",
-					"text": "based on range",
+					"text": ":xliff:HDI2_RHeaderRange",
 					"focusable": false,
 					"radioGroup": "Group16",
 					"method": "ObjectMethods/rheader4.4dm",
@@ -608,7 +615,7 @@
 					"sizingX": "move",
 					"sizingY": "move",
 					"fontWeight": "bold",
-					"text": "WP Get footer"
+					"text": ":xliff:HDI2_GroupGetFooter"
 				},
 				"rfooter0": {
 					"type": "radio",
@@ -619,7 +626,7 @@
 					"sizingX": "move",
 					"sizingY": "move",
 					"dataSource": "rfooter0",
-					"text": "main footer",
+					"text": ":xliff:HDI2_RFooterMain",
 					"focusable": false,
 					"radioGroup": "Group15",
 					"method": "ObjectMethods/rfooter0.4dm",
@@ -636,7 +643,7 @@
 					"sizingX": "move",
 					"sizingY": "move",
 					"dataSource": "rfooter1",
-					"text": "wk first footer",
+					"text": ":xliff:HDI2_RFooterFirst",
 					"focusable": false,
 					"radioGroup": "Group15",
 					"method": "ObjectMethods/rfooter1.4dm",
@@ -653,7 +660,7 @@
 					"sizingX": "move",
 					"sizingY": "move",
 					"dataSource": "rfooter2",
-					"text": "wk left footer",
+					"text": ":xliff:HDI2_RFooterLeft",
 					"focusable": false,
 					"radioGroup": "Group15",
 					"method": "ObjectMethods/rfooter2.4dm",
@@ -670,7 +677,7 @@
 					"sizingX": "move",
 					"sizingY": "move",
 					"dataSource": "rfooter3",
-					"text": "wk right footer",
+					"text": ":xliff:HDI2_RFooterRight",
 					"focusable": false,
 					"radioGroup": "Group15",
 					"method": "ObjectMethods/rfooter3.4dm",
@@ -687,7 +694,7 @@
 					"sizingX": "move",
 					"sizingY": "move",
 					"dataSource": "rfooter4",
-					"text": "based on range",
+					"text": ":xliff:HDI2_RFooterRange",
 					"focusable": false,
 					"radioGroup": "Group15",
 					"method": "ObjectMethods/rfooter4.4dm",
@@ -704,7 +711,8 @@
 					"sizingX": "move",
 					"textAlign": "left",
 					"fontTheme": "additional",
-					"text": "Based on document\r(section 1 if many)"
+					"text": ":xliff:HDI2_HeaderBasedOnDoc",
+					"stroke": "automatic"
 				},
 				"Text1": {
 					"type": "text",
@@ -715,7 +723,8 @@
 					"sizingX": "move",
 					"textAlign": "left",
 					"fontTheme": "additional",
-					"text": "Range based on\rcurrent selection"
+					"text": ":xliff:HDI2_HeaderBasedOnSelection",
+					"stroke": "automatic"
 				},
 				"Line": {
 					"type": "line",
@@ -723,7 +732,7 @@
 					"left": 640,
 					"height": 80,
 					"sizingX": "move",
-					"stroke": "#696969"
+					"class": "hdi-muted"
 				},
 				"Text2": {
 					"type": "text",
@@ -735,7 +744,8 @@
 					"sizingY": "move",
 					"textAlign": "left",
 					"fontTheme": "additional",
-					"text": "Based document\r(section 1 if many)"
+					"text": ":xliff:HDI2_FooterBasedOnDoc",
+					"stroke": "automatic"
 				},
 				"Text3": {
 					"type": "text",
@@ -747,7 +757,8 @@
 					"sizingY": "move",
 					"textAlign": "left",
 					"fontTheme": "additional",
-					"text": "Range based on\rcurrent selection"
+					"text": ":xliff:HDI2_FooterBasedOnSelection",
+					"stroke": "automatic"
 				},
 				"Line1": {
 					"type": "line",
@@ -756,7 +767,7 @@
 					"height": 80,
 					"sizingX": "move",
 					"sizingY": "move",
-					"stroke": "#696969"
+					"class": "hdi-muted"
 				},
 				"Text4": {
 					"type": "text",
@@ -768,7 +779,8 @@
 					"sizingY": "grow",
 					"textAlign": "left",
 					"fontTheme": "additional",
-					"text": "This command is only based on the document."
+					"text": ":xliff:HDI2_BodyDocOnly",
+					"stroke": "automatic"
 				},
 				"Oval": {
 					"type": "oval",
@@ -777,7 +789,8 @@
 					"width": 20,
 					"height": 20,
 					"sizingX": "move",
-					"fill": "#00FFFF"
+					"fill": "#00FFFF",
+					"stroke": "automatic"
 				},
 				"Oval1": {
 					"type": "oval",
@@ -787,7 +800,8 @@
 					"height": 20,
 					"sizingX": "move",
 					"sizingY": "move",
-					"fill": "#FFFF00"
+					"fill": "#FFFF00",
+					"stroke": "automatic"
 				},
 				"HeaderAlertIcon": {
 					"type": "rectangle",
@@ -811,7 +825,8 @@
 					"visibility": "hidden",
 					"sizingX": "move",
 					"textAlign": "left",
-					"text": "No such header in this document!"
+					"text": ":xliff:HDI2_NoSuchHeader",
+					"stroke": "automatic"
 				},
 				"FooterAlertIcon": {
 					"type": "rectangle",
@@ -837,7 +852,8 @@
 					"sizingX": "move",
 					"sizingY": "move",
 					"textAlign": "left",
-					"text": "No such footer in this document!"
+					"text": ":xliff:HDI2_NoSuchFooter",
+					"stroke": "automatic"
 				},
 				"Variable2": {
 					"type": "input",
@@ -868,7 +884,7 @@
 					"sizingX": "move",
 					"sizingY": "grow",
 					"fontWeight": "bold",
-					"text": "Body reference"
+					"text": ":xliff:HDI2_BodyReference"
 				},
 				"Variable3": {
 					"type": "input",
@@ -902,7 +918,7 @@
 					"height": 490,
 					"sizingX": "move",
 					"fontWeight": "bold",
-					"text": "WP SET FRAME"
+					"text": ":xliff:HDI2_GroupSetFrame"
 				},
 				"FrameAlertIcon": {
 					"type": "rectangle",
@@ -926,7 +942,8 @@
 					"visibility": "hidden",
 					"sizingX": "move",
 					"textAlign": "left",
-					"text": "No such frame in this document!"
+					"text": ":xliff:HDI2_NoSuchFrame",
+					"stroke": "automatic"
 				},
 				"rFrame0": {
 					"type": "radio",
@@ -936,7 +953,7 @@
 					"height": 20,
 					"sizingX": "move",
 					"dataSource": "rFrame0",
-					"text": "wk body",
+					"text": ":xliff:HDI2_FrameBody",
 					"focusable": false,
 					"radioGroup": "Group21",
 					"method": "ObjectMethods/rFrame0.4dm",
@@ -952,7 +969,7 @@
 					"height": 20,
 					"sizingX": "move",
 					"dataSource": "rFrame9",
-					"text": "wk current section main header",
+					"text": ":xliff:HDI2_FrameSectionMainHeader",
 					"focusable": false,
 					"radioGroup": "Group21",
 					"method": "ObjectMethods/rFrame9.4dm",
@@ -968,7 +985,7 @@
 					"height": 20,
 					"sizingX": "move",
 					"dataSource": "rFrame10",
-					"text": "wk current section main footer",
+					"text": ":xliff:HDI2_FrameSectionMainFooter",
 					"focusable": false,
 					"radioGroup": "Group21",
 					"method": "ObjectMethods/rFrame10.4dm",
@@ -984,7 +1001,7 @@
 					"height": 20,
 					"sizingX": "move",
 					"dataSource": "rFrame3",
-					"text": "wk current section first header",
+					"text": ":xliff:HDI2_FrameSectionFirstHeader",
 					"focusable": false,
 					"radioGroup": "Group21",
 					"method": "ObjectMethods/rFrame3.4dm",
@@ -1000,7 +1017,7 @@
 					"height": 20,
 					"sizingX": "move",
 					"dataSource": "rFrame4",
-					"text": "wk current section first footer",
+					"text": ":xliff:HDI2_FrameSectionFirstFooter",
 					"focusable": false,
 					"radioGroup": "Group21",
 					"method": "ObjectMethods/rFrame4.4dm",
@@ -1016,7 +1033,7 @@
 					"height": 20,
 					"sizingX": "move",
 					"dataSource": "rFrame5",
-					"text": "wk current section left header",
+					"text": ":xliff:HDI2_FrameSectionLeftHeader",
 					"focusable": false,
 					"radioGroup": "Group21",
 					"method": "ObjectMethods/rFrame5.4dm",
@@ -1032,7 +1049,7 @@
 					"height": 20,
 					"sizingX": "move",
 					"dataSource": "rFrame6",
-					"text": "wk current section left footer",
+					"text": ":xliff:HDI2_FrameSectionLeftFooter",
 					"focusable": false,
 					"radioGroup": "Group21",
 					"method": "ObjectMethods/rFrame6.4dm",
@@ -1048,7 +1065,7 @@
 					"height": 20,
 					"sizingX": "move",
 					"dataSource": "rFrame7",
-					"text": "wk current section right header",
+					"text": ":xliff:HDI2_FrameSectionRightHeader",
 					"focusable": false,
 					"radioGroup": "Group21",
 					"method": "ObjectMethods/rFrame7.4dm",
@@ -1064,7 +1081,7 @@
 					"height": 20,
 					"sizingX": "move",
 					"dataSource": "rFrame8",
-					"text": "wk current section right footer",
+					"text": ":xliff:HDI2_FrameSectionRightFooter",
 					"focusable": false,
 					"radioGroup": "Group21",
 					"method": "ObjectMethods/rFrame8.4dm",
@@ -1077,28 +1094,28 @@
 					"top": 616,
 					"left": 480,
 					"width": 300,
-					"height": 19,
 					"sizingX": "move",
-					"text": "wk current page header",
+					"text": ":xliff:HDI2_FrameCurrentPageHeader",
 					"focusable": false,
 					"method": "ObjectMethods/Button.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default1"
 				},
 				"Button1": {
 					"type": "button",
 					"top": 649,
 					"left": 480,
 					"width": 300,
-					"height": 19,
 					"sizingX": "move",
-					"text": "wk current page footer",
+					"text": ":xliff:HDI2_FrameCurrentPageFooter",
 					"focusable": false,
 					"method": "ObjectMethods/Button1.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default1"
 				},
 				"Text6": {
 					"type": "text",
@@ -1109,7 +1126,8 @@
 					"sizingX": "move",
 					"textAlign": "left",
 					"fontTheme": "additional",
-					"text": "Based on document\r(section 1 if many)"
+					"text": ":xliff:HDI2_FrameBasedOnDoc",
+					"stroke": "automatic"
 				},
 				"Text7": {
 					"type": "text",
@@ -1120,7 +1138,8 @@
 					"sizingX": "move",
 					"textAlign": "left",
 					"fontTheme": "additional",
-					"text": "Based on\rcurrent selection"
+					"text": ":xliff:HDI2_FrameBasedOnSelection",
+					"stroke": "automatic"
 				},
 				"Line2": {
 					"type": "line",
@@ -1128,7 +1147,7 @@
 					"left": 840,
 					"height": 220,
 					"sizingX": "move",
-					"stroke": "#696969"
+					"class": "hdi-muted"
 				},
 				"Line3": {
 					"type": "line",
@@ -1136,7 +1155,7 @@
 					"left": 840,
 					"height": 80,
 					"sizingX": "move",
-					"stroke": "#696969"
+					"class": "hdi-muted"
 				},
 				"TxtInfo5": {
 					"type": "text",
@@ -1147,7 +1166,8 @@
 					"sizingX": "move",
 					"class": "HDI",
 					"textAlign": "left",
-					"text": "<- Click anywhere in the document… the command \"WP Get Frame\" will be executed to detect which is the current frame.\r\r\rClick any frame selector below to set the carret inside the chosen frame.\r(if the frame does not exist in this document, the command does nothing.)"
+					"text": ":xliff:HDI2_FrameInstructions",
+					"stroke": "automatic"
 				}
 			}
 		}

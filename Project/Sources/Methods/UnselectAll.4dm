@@ -1,12 +1,10 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 
 // remove yellow
 
-C_LONGINT:C283($1)
-C_LONGINT:C283($type)
-C_LONGINT:C283($i; $start; $end)
+#DECLARE($type : Integer)
 
-$type:=$1
+var $i; $start; $end : Integer
 
 If ($type=wk current page header:K81:207)
 	$start:=1

@@ -1,6 +1,6 @@
-//%attributes = {}
-C_POINTER:C301($ptr)
-C_LONGINT:C283($frame)
+//%attributes = {"invisible":true}
+var $ptr : Pointer
+var $frame : Integer
 
 rFrame0:=0
 rFrame1:=0  //

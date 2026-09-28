@@ -1,4 +1,4 @@
-C_OBJECT:C1216($source; $rangeSource; $tempoc; $target; $rangeTarget)
+var $source; $rangeSource; $tempoc; $target; $rangeTarget : Object
 
 QUERY:C277([TEMPLATES:3]; [TEMPLATES:3]Title:2="EMPTY")  // reset the final doc for HDI purpose
 wp_final:=[TEMPLATES:3]WPtemplate:3

@@ -1,4 +1,4 @@
-C_LONGINT:C283($page)
+var $page : Integer
 
 GOTO SELECTED RECORD:C245([SAMPLES:1]; _Titles)
 

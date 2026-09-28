@@ -1,3 +1,3 @@
-//%attributes = {}
-C_LONGINT:C283($1)
+//%attributes = {"invisible":true}
+#DECLARE($page : Integer)
 

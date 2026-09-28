@@ -1,5 +1,5 @@
-//%attributes = {}
-C_OBJECT:C1216($range)
+//%attributes = {"invisible":true}
+var $range : Object
 
 UnselectAll(wk current page header:K81:207)
 
@@ -30,4 +30,3 @@ If (vHeaderRange#Null:C1517)
 Else 
 	OBJECT SET VISIBLE:C603(*; "HeaderAlert@"; True:C214)
 End if 
-

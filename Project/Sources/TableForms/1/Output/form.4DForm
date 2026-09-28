@@ -58,7 +58,8 @@
 					"width": 64,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "ID : "
+					"text": ":xliff:Output1_LabelID",
+					"stroke": "automatic"
 				},
 				"S2_Text": {
 					"type": "text",
@@ -67,7 +68,8 @@
 					"width": 280,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "Title : "
+					"text": ":xliff:Output1_LabelTitle",
+					"stroke": "automatic"
 				},
 				"S3_Text": {
 					"type": "text",
@@ -76,7 +78,8 @@
 					"width": 240,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "ShortText : "
+					"text": ":xliff:Output1_LabelShortText",
+					"stroke": "automatic"
 				},
 				"S4_Text": {
 					"type": "text",
@@ -85,7 +88,8 @@
 					"width": 240,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "LongText : "
+					"text": ":xliff:Output1_LabelLongText",
+					"stroke": "automatic"
 				},
 				"Rectangle6": {
 					"type": "rectangle",
@@ -94,7 +98,8 @@
 					"width": 960,
 					"height": 25,
 					"sizingX": "grow",
-					"stroke": "transparent"
+					"stroke": "transparent",
+					"fill": "automatic"
 				},
 				"S1_Field": {
 					"type": "input",
@@ -132,7 +137,7 @@
 					"height": 17,
 					"sizingX": "grow",
 					"dataSource": "[SAMPLES:1]Title:2",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -157,7 +162,7 @@
 					"height": 17,
 					"sizingX": "grow",
 					"dataSource": "[SAMPLES:1]",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -182,7 +187,7 @@
 					"height": 17,
 					"sizingX": "grow",
 					"dataSource": "[SAMPLES:1]",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -204,7 +209,7 @@
 					"top": -5,
 					"left": 0,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"class": "hdi-divider"
 				},
 				"Line8": {
 					"type": "line",
@@ -212,14 +217,14 @@
 					"left": 960,
 					"height": 49,
 					"sizingX": "move",
-					"stroke": "#A8A8A8"
+					"class": "hdi-divider"
 				},
 				"Line9": {
 					"type": "line",
 					"top": -5,
 					"left": 688,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"class": "hdi-divider"
 				},
 				"Splitter2": {
 					"type": "splitter",
@@ -238,7 +243,7 @@
 					"top": -5,
 					"left": 416,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"class": "hdi-divider"
 				},
 				"Splitter3": {
 					"type": "splitter",
@@ -257,7 +262,7 @@
 					"top": -5,
 					"left": 104,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"class": "hdi-divider"
 				},
 				"Splitter4": {
 					"type": "splitter",

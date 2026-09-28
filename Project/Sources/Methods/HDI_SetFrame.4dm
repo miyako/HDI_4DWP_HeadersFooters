@@ -1,7 +1,6 @@
-//%attributes = {}
-C_POINTER:C301($ptr)
-C_LONGINT:C283($frameSet)
-C_LONGINT:C283($frameGet)
+//%attributes = {"invisible":true}
+var $ptr : Pointer
+var $frameSet; $frameGet : Integer
 
 Case of 
 	: (rFrame0=1)
@@ -33,4 +32,3 @@ If ($frameSet#$frameGet)
 End if 
 
 HDI_GetFrame
-

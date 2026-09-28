@@ -45,7 +45,8 @@
 					"top": 77,
 					"left": 19,
 					"width": 644,
-					"sizingX": "grow"
+					"sizingX": "grow",
+					"stroke": "automatic"
 				},
 				"bFirst": {
 					"type": "pictureButton",
@@ -237,13 +238,13 @@
 					"top": 89,
 					"left": 434,
 					"width": 120,
-					"height": 22,
-					"text": "New",
+					"text": ":xliff:Input1_BtnNew",
 					"focusable": false,
 					"method": "ObjectMethods/Button.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default1"
 				}
 			}
 		}

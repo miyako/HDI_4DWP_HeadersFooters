@@ -1,4 +1,4 @@
-C_TEXT:C284($path)
+var $path : Text
 
 $Path:=Get 4D folder:C485(Data folder:K5:33)+"sample.4wp"
 WP EXPORT DOCUMENT:C1337(WParea; $Path; wk 4wp:K81:4)

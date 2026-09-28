@@ -1,5 +1,5 @@
-//%attributes = {}
-C_OBJECT:C1216($range)
+//%attributes = {"invisible":true}
+var $range : Object
 
 UnselectAll(wk current page footer:K81:208)
 
@@ -29,5 +29,3 @@ If (vFooterRange#Null:C1517)
 Else 
 	OBJECT SET VISIBLE:C603(*; "FooterAlert@"; True:C214)
 End if 
-
-
