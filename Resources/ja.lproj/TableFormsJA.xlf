@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="TableFormsJA.xlf" source-language="en" target-language="ja">
+    <body>
+      <trans-unit id="Input1_BtnNew" resname="Input1_BtnNew">
+        <source>New</source>
+        <target>新規</target>
+      </trans-unit>
+      <trans-unit id="Output1_LabelID" resname="Output1_LabelID">
+        <source>ID : </source>
+        <target>ID : </target>
+      </trans-unit>
+      <trans-unit id="Output1_LabelTitle" resname="Output1_LabelTitle">
+        <source>Title : </source>
+        <target>タイトル : </target>
+      </trans-unit>
+      <trans-unit id="Output1_LabelShortText" resname="Output1_LabelShortText">
+        <source>ShortText : </source>
+        <target>ShortText : </target>
+      </trans-unit>
+      <trans-unit id="Output1_LabelLongText" resname="Output1_LabelLongText">
+        <source>LongText : </source>
+        <target>LongText : </target>
+      </trans-unit>
+      <trans-unit id="Input3_Title" resname="Input3_Title">
+        <source>TEMPLATES</source>
+        <target>TEMPLATES</target>
+      </trans-unit>
+      <trans-unit id="Input3_LabelID" resname="Input3_LabelID">
+        <source>ID : </source>
+        <target>ID : </target>
+      </trans-unit>
+      <trans-unit id="Input3_LabelTitle" resname="Input3_LabelTitle">
+        <source>Title : </source>
+        <target>タイトル : </target>
+      </trans-unit>
+      <trans-unit id="Output3_LabelID" resname="Output3_LabelID">
+        <source>ID : </source>
+        <target>ID : </target>
+      </trans-unit>
+      <trans-unit id="Output3_LabelTitle" resname="Output3_LabelTitle">
+        <source>Title : </source>
+        <target>タイトル : </target>
+      </trans-unit>
+      <trans-unit id="Output3_LabelWPTemplate" resname="Output3_LabelWPTemplate">
+        <source>WPtemplate : </source>
+        <target>WPtemplate : </target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

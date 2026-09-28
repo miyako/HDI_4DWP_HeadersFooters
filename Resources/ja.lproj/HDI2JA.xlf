@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="HDI2JA.xlf" source-language="en" target-language="ja">
+    <body>
+      <trans-unit id="HDI2_TabInfo" resname="HDI2_TabInfo">
+        <source>Info</source>
+        <target>情報</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TabUserStory" resname="HDI2_TabUserStory">
+        <source>User story</source>
+        <target>ユーザーストーリー</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TabHeadersFooters" resname="HDI2_TabHeadersFooters">
+        <source>Headers &amp; Footers</source>
+        <target>ヘッダーとフッター</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TabFrames" resname="HDI2_TabFrames">
+        <source>Frames</source>
+        <target>フレーム</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Save" resname="HDI2_Save">
+        <source>Save</source>
+        <target>保存</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Example" resname="HDI2_Example">
+        <source>Example:</source>
+        <target>例:</target>
+      </trans-unit>
+      <trans-unit id="HDI2_InfoIntro" resname="HDI2_InfoIntro">
+        <source>Starting with 4D v16 R5, a new set of commands have been added to 4D Write Pro to manage HEADERS and FOOTERS by programming.</source>
+        <target>4D v16 R5 から、4D Write Pro のヘッダーとフッターをプログラムで管理する新しいコマンド群が追加されました。</target>
+      </trans-unit>
+      <trans-unit id="HDI2_InfoCommands1" resname="HDI2_InfoCommands1">
+        <source>WP Get header, WP Get body, WP Get footer</source>
+        <target>WP Get header, WP Get body, WP Get footer</target>
+      </trans-unit>
+      <trans-unit id="HDI2_InfoDesc1" resname="HDI2_InfoDesc1">
+        <source>These commands are used to retreive REFERENCES of headers, bodies and footers of DOCUMENTS or SECTIONS</source>
+        <target>これらのコマンドは、ドキュメントまたはセクションのヘッダー・ボディ・フッターの参照を取得するために使用します。</target>
+      </trans-unit>
+      <trans-unit id="HDI2_InfoCommands2" resname="HDI2_InfoCommands2">
+        <source>WP Get frame, WP SET FRAME</source>
+        <target>WP Get frame, WP SET FRAME</target>
+      </trans-unit>
+      <trans-unit id="HDI2_InfoDesc2" resname="HDI2_InfoDesc2">
+        <source>These commands are used to get the FRAME (header, first header, body, first footer, etc.) where the CURSOR is currently in, or to set the CURSOR in a specific FRAME.</source>
+        <target>これらのコマンドは、カーソルが現在存在するフレーム(ヘッダー、最初のヘッダー、ボディ、最初のフッターなど)を取得したり、カーソルを特定のフレームに設定したりするために使用します。</target>
+      </trans-unit>
+      <trans-unit id="HDI2_CopyHeaderToHeader" resname="HDI2_CopyHeaderToHeader">
+        <source>Copy header to header</source>
+        <target>ヘッダーをヘッダーへコピー</target>
+      </trans-unit>
+      <trans-unit id="HDI2_CopyHeaderToBody" resname="HDI2_CopyHeaderToBody">
+        <source>Copy header to body</source>
+        <target>ヘッダーをボディへコピー</target>
+      </trans-unit>
+      <trans-unit id="HDI2_CopyHeaderToFooter" resname="HDI2_CopyHeaderToFooter">
+        <source>Copy header to footer</source>
+        <target>ヘッダーをフッターへコピー</target>
+      </trans-unit>
+      <trans-unit id="HDI2_CopyBodyToHeader" resname="HDI2_CopyBodyToHeader">
+        <source>Copy body to header</source>
+        <target>ボディをヘッダーへコピー</target>
+      </trans-unit>
+      <trans-unit id="HDI2_CopyBodyToBody" resname="HDI2_CopyBodyToBody">
+        <source>Copy body to body</source>
+        <target>ボディをボディへコピー</target>
+      </trans-unit>
+      <trans-unit id="HDI2_CopyBodyToFooter" resname="HDI2_CopyBodyToFooter">
+        <source>Copy body to footer</source>
+        <target>ボディをフッターへコピー</target>
+      </trans-unit>
+      <trans-unit id="HDI2_CopyFooterToHeader" resname="HDI2_CopyFooterToHeader">
+        <source>Copy footer to header</source>
+        <target>フッターをヘッダーへコピー</target>
+      </trans-unit>
+      <trans-unit id="HDI2_CopyFooterToBody" resname="HDI2_CopyFooterToBody">
+        <source>Copy footer to body</source>
+        <target>フッターをボディへコピー</target>
+      </trans-unit>
+      <trans-unit id="HDI2_CopyFooterToFooter" resname="HDI2_CopyFooterToFooter">
+        <source>Copy footer to footer</source>
+        <target>フッターをフッターへコピー</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TemplateDocument" resname="HDI2_TemplateDocument">
+        <source>Template document</source>
+        <target>テンプレートドキュメント</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FinalDocument" resname="HDI2_FinalDocument">
+        <source>Final document</source>
+        <target>最終ドキュメント</target>
+      </trans-unit>
+      <trans-unit id="HDI2_UserStory" resname="HDI2_UserStory">
+        <source>I have created a 4D WritePro template.This template has a header and a footer.=&gt; I want to be able to copy any frame of my template to any frame of a final document.</source>
+        <target>4D Write Pro のテンプレートを作成しました。このテンプレートにはヘッダーとフッターがあります。=&gt; テンプレートの任意のフレームを、最終ドキュメントの任意のフレームにコピーできるようにしたいです。</target>
+      </trans-unit>
+      <trans-unit id="HDI2_HeaderReference" resname="HDI2_HeaderReference">
+        <source>Header reference</source>
+        <target>ヘッダー参照</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FooterReference" resname="HDI2_FooterReference">
+        <source>Footer reference</source>
+        <target>フッター参照</target>
+      </trans-unit>
+      <trans-unit id="HDI2_GroupGetBody" resname="HDI2_GroupGetBody">
+        <source>WP Get body</source>
+        <target>WP Get body</target>
+      </trans-unit>
+      <trans-unit id="HDI2_GroupGetHeader" resname="HDI2_GroupGetHeader">
+        <source>WP Get header</source>
+        <target>WP Get header</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Load" resname="HDI2_Load">
+        <source>Load</source>
+        <target>読み込み</target>
+      </trans-unit>
+      <trans-unit id="HDI2_GetBody" resname="HDI2_GetBody">
+        <source>Get body</source>
+        <target>ボディを取得</target>
+      </trans-unit>
+      <trans-unit id="HDI2_RHeaderMain" resname="HDI2_RHeaderMain">
+        <source>main header</source>
+        <target>メインヘッダー</target>
+      </trans-unit>
+      <trans-unit id="HDI2_RHeaderFirst" resname="HDI2_RHeaderFirst">
+        <source>wk first header</source>
+        <target>wk first header</target>
+      </trans-unit>
+      <trans-unit id="HDI2_RHeaderLeft" resname="HDI2_RHeaderLeft">
+        <source>wk left header</source>
+        <target>wk left header</target>
+      </trans-unit>
+      <trans-unit id="HDI2_RHeaderRight" resname="HDI2_RHeaderRight">
+        <source>wk right header</source>
+        <target>wk right header</target>
+      </trans-unit>
+      <trans-unit id="HDI2_RHeaderRange" resname="HDI2_RHeaderRange">
+        <source>based on range</source>
+        <target>範囲に基づく</target>
+      </trans-unit>
+      <trans-unit id="HDI2_GroupGetFooter" resname="HDI2_GroupGetFooter">
+        <source>WP Get footer</source>
+        <target>WP Get footer</target>
+      </trans-unit>
+      <trans-unit id="HDI2_RFooterMain" resname="HDI2_RFooterMain">
+        <source>main footer</source>
+        <target>メインフッター</target>
+      </trans-unit>
+      <trans-unit id="HDI2_RFooterFirst" resname="HDI2_RFooterFirst">
+        <source>wk first footer</source>
+        <target>wk first footer</target>
+      </trans-unit>
+      <trans-unit id="HDI2_RFooterLeft" resname="HDI2_RFooterLeft">
+        <source>wk left footer</source>
+        <target>wk left footer</target>
+      </trans-unit>
+      <trans-unit id="HDI2_RFooterRight" resname="HDI2_RFooterRight">
+        <source>wk right footer</source>
+        <target>wk right footer</target>
+      </trans-unit>
+      <trans-unit id="HDI2_RFooterRange" resname="HDI2_RFooterRange">
+        <source>based on range</source>
+        <target>範囲に基づく</target>
+      </trans-unit>
+      <trans-unit id="HDI2_HeaderBasedOnDoc" resname="HDI2_HeaderBasedOnDoc">
+        <source>Based on document(section 1 if many)</source>
+        <target>ドキュメントに基づく(複数の場合はセクション1)</target>
+      </trans-unit>
+      <trans-unit id="HDI2_HeaderBasedOnSelection" resname="HDI2_HeaderBasedOnSelection">
+        <source>Range based oncurrent selection</source>
+        <target>現在の選択範囲に基づく範囲</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FooterBasedOnDoc" resname="HDI2_FooterBasedOnDoc">
+        <source>Based document(section 1 if many)</source>
+        <target>ドキュメントに基づく(複数の場合はセクション1)</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FooterBasedOnSelection" resname="HDI2_FooterBasedOnSelection">
+        <source>Range based oncurrent selection</source>
+        <target>現在の選択範囲に基づく範囲</target>
+      </trans-unit>
+      <trans-unit id="HDI2_BodyDocOnly" resname="HDI2_BodyDocOnly">
+        <source>This command is only based on the document.</source>
+        <target>このコマンドはドキュメントのみに基づいています。</target>
+      </trans-unit>
+      <trans-unit id="HDI2_NoSuchHeader" resname="HDI2_NoSuchHeader">
+        <source>No such header in this document!</source>
+        <target>このドキュメントにはそのヘッダーはありません!</target>
+      </trans-unit>
+      <trans-unit id="HDI2_NoSuchFooter" resname="HDI2_NoSuchFooter">
+        <source>No such footer in this document!</source>
+        <target>このドキュメントにはそのフッターはありません!</target>
+      </trans-unit>
+      <trans-unit id="HDI2_BodyReference" resname="HDI2_BodyReference">
+        <source>Body reference</source>
+        <target>ボディ参照</target>
+      </trans-unit>
+      <trans-unit id="HDI2_GroupSetFrame" resname="HDI2_GroupSetFrame">
+        <source>WP SET FRAME</source>
+        <target>WP SET FRAME</target>
+      </trans-unit>
+      <trans-unit id="HDI2_NoSuchFrame" resname="HDI2_NoSuchFrame">
+        <source>No such frame in this document!</source>
+        <target>このドキュメントにはそのフレームはありません!</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FrameBody" resname="HDI2_FrameBody">
+        <source>wk body</source>
+        <target>wk body</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FrameSectionMainHeader" resname="HDI2_FrameSectionMainHeader">
+        <source>wk current section main header</source>
+        <target>wk current section main header</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FrameSectionMainFooter" resname="HDI2_FrameSectionMainFooter">
+        <source>wk current section main footer</source>
+        <target>wk current section main footer</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FrameSectionFirstHeader" resname="HDI2_FrameSectionFirstHeader">
+        <source>wk current section first header</source>
+        <target>wk current section first header</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FrameSectionFirstFooter" resname="HDI2_FrameSectionFirstFooter">
+        <source>wk current section first footer</source>
+        <target>wk current section first footer</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FrameSectionLeftHeader" resname="HDI2_FrameSectionLeftHeader">
+        <source>wk current section left header</source>
+        <target>wk current section left header</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FrameSectionLeftFooter" resname="HDI2_FrameSectionLeftFooter">
+        <source>wk current section left footer</source>
+        <target>wk current section left footer</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FrameSectionRightHeader" resname="HDI2_FrameSectionRightHeader">
+        <source>wk current section right header</source>
+        <target>wk current section right header</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FrameSectionRightFooter" resname="HDI2_FrameSectionRightFooter">
+        <source>wk current section right footer</source>
+        <target>wk current section right footer</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FrameCurrentPageHeader" resname="HDI2_FrameCurrentPageHeader">
+        <source>wk current page header</source>
+        <target>wk current page header</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FrameCurrentPageFooter" resname="HDI2_FrameCurrentPageFooter">
+        <source>wk current page footer</source>
+        <target>wk current page footer</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FrameBasedOnDoc" resname="HDI2_FrameBasedOnDoc">
+        <source>Based on document(section 1 if many)</source>
+        <target>ドキュメントに基づく(複数の場合はセクション1)</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FrameBasedOnSelection" resname="HDI2_FrameBasedOnSelection">
+        <source>Based oncurrent selection</source>
+        <target>現在の選択範囲に基づく</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FrameInstructions" resname="HDI2_FrameInstructions">
+        <source>&lt;- Click anywhere in the document… the command "WP Get Frame" will be executed to detect which is the current frame.Click any frame selector below to set the carret inside the chosen frame.(if the frame does not exist in this document, the command does nothing.)</source>
+        <target>&lt;- ドキュメント内の任意の場所をクリックすると、現在のフレームを検出するために "WP Get Frame" コマンドが実行されます。下のフレームセレクタをクリックすると、選択したフレーム内にカーソルを設定します。(このドキュメントにそのフレームが存在しない場合、コマンドは何もしません。)</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

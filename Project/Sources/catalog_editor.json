@@ -1,0 +1,46 @@
+{
+	"tables": {
+		"TEMPLATES": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "152.94921875",
+				"top": "0.75390625",
+				"width": "120",
+				"height": "167.33203125"
+			},
+			"displayable_fields_count": 6
+		},
+		"SAMPLES": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "0",
+				"top": "0",
+				"width": "120",
+				"height": "167.33203125"
+			},
+			"displayable_fields_count": 6,
+			"fields_ordering": 2,
+			"fields": {
+				"WPsample": {
+					"position": 3
+				},
+				"Title": {
+					"position": 2
+				},
+				"ID": {
+					"position": 1
+				}
+			}
+		}
+	}
+}
