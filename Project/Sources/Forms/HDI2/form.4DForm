@@ -1,0 +1,1203 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 1000,
+	"windowMaxWidth": 32000,
+	"windowMinHeight": 800,
+	"windowMaxHeight": 32000,
+	"width": 1200,
+	"height": 800,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onTimer",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 1160,
+					"height": 760,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Info",
+						"User story",
+						"Headers & Footers",
+						"Frames"
+					],
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"WParea": {
+					"type": "write",
+					"top": 110,
+					"left": 40,
+					"width": 400,
+					"height": 650,
+					"visibility": "hidden",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[SAMPLES:1]WPsample:5",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"zoom": 50,
+					"showSelection": true,
+					"showPageFrames": true,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"method": "ObjectMethods/WParea.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onSelectionChange",
+						"onAfterEdit"
+					]
+				},
+				"wpAreaSave": {
+					"type": "button",
+					"top": 842,
+					"left": 20,
+					"width": 70,
+					"height": 20,
+					"visibility": "hidden",
+					"text": "Save",
+					"fontStyle": "italic",
+					"stroke": "#FF6347",
+					"focusable": false,
+					"method": "ObjectMethods/wpAreaSave.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"wpAreaPop": {
+					"type": "dropdown",
+					"top": 60,
+					"left": 160,
+					"width": 280,
+					"height": 25,
+					"visibility": "hidden",
+					"dataSource": "_Titles",
+					"focusable": false,
+					"method": "ObjectMethods/wpAreaPop.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"wpAreaText": {
+					"type": "text",
+					"top": 63,
+					"left": 40,
+					"width": 110,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Example:"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Round Rectangle1": {
+					"type": "rectangle",
+					"top": 519,
+					"left": 181,
+					"width": 841,
+					"height": 180,
+					"fill": "#E0E0E0",
+					"stroke": "#808080",
+					"borderRadius": 5
+				},
+				"Round Rectangle": {
+					"type": "rectangle",
+					"top": 273,
+					"left": 181,
+					"width": 841,
+					"height": 180,
+					"fill": "#E0E0E0",
+					"stroke": "#808080",
+					"borderRadius": 5
+				},
+				"TxtInfo3": {
+					"type": "text",
+					"top": 120,
+					"left": 281,
+					"width": 640,
+					"height": 60,
+					"sizingX": "grow",
+					"class": "HDI",
+					"textAlign": "center",
+					"text": "Starting with 4D v16 R5, a new set of commands have been added to 4D Write Pro to manage HEADERS and FOOTERS by programming."
+				},
+				"TxtInfo1": {
+					"type": "text",
+					"top": 320,
+					"left": 281,
+					"width": 640,
+					"height": 30,
+					"sizingX": "grow",
+					"class": "HDI",
+					"textAlign": "center",
+					"text": "WP Get header, WP Get body, WP Get footer"
+				},
+				"TxtInfo7": {
+					"type": "text",
+					"top": 360,
+					"left": 411,
+					"width": 380,
+					"height": 50,
+					"sizingX": "grow",
+					"class": "default",
+					"textAlign": "center",
+					"text": "These commands are used to retreive REFERENCES of headers, bodies and footers of DOCUMENTS or SECTIONS"
+				},
+				"TxtInfo2": {
+					"type": "text",
+					"top": 560,
+					"left": 281,
+					"width": 640,
+					"height": 30,
+					"sizingX": "grow",
+					"class": "HDI",
+					"textAlign": "center",
+					"text": "WP Get frame, WP SET FRAME"
+				},
+				"TxtInfo8": {
+					"type": "text",
+					"top": 600,
+					"left": 411,
+					"width": 380,
+					"height": 80,
+					"sizingX": "grow",
+					"class": "default",
+					"textAlign": "center",
+					"text": "These commands are used to get the FRAME (header, first header, body, first footer, etc.) where the CURSOR is currently in, or to set the CURSOR in a specific FRAME."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture9": {
+					"type": "picture",
+					"top": 405,
+					"left": 520,
+					"width": 160,
+					"height": 60,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Pictures/Right.svg"
+				},
+				"wp_final": {
+					"type": "write",
+					"top": 280,
+					"left": 787,
+					"width": 370,
+					"height": 480,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "wp_final",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"zoom": 50,
+					"showSelection": true,
+					"showPageFrames": true,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onSelectionChange",
+						"onAfterEdit"
+					]
+				},
+				"wp_template": {
+					"type": "write",
+					"top": 280,
+					"left": 40,
+					"width": 370,
+					"height": 480,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "wp_template",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"zoom": 50,
+					"showSelection": true,
+					"showPageFrames": true,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onSelectionChange",
+						"onAfterEdit"
+					]
+				},
+				"Button5": {
+					"type": "button",
+					"top": 309,
+					"left": 446,
+					"width": 307,
+					"height": 20,
+					"text": "Copy header to header",
+					"focusable": false,
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 339,
+					"left": 446,
+					"width": 307,
+					"height": 20,
+					"text": "Copy header to body",
+					"focusable": false,
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button6": {
+					"type": "button",
+					"top": 369,
+					"left": 446,
+					"width": 307,
+					"height": 20,
+					"text": "Copy header to footer",
+					"focusable": false,
+					"method": "ObjectMethods/Button6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button8": {
+					"type": "button",
+					"top": 479,
+					"left": 446,
+					"width": 307,
+					"height": 20,
+					"text": "Copy body to header",
+					"focusable": false,
+					"method": "ObjectMethods/Button8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button9": {
+					"type": "button",
+					"top": 509,
+					"left": 446,
+					"width": 307,
+					"height": 20,
+					"text": "Copy body to body",
+					"focusable": false,
+					"method": "ObjectMethods/Button9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button10": {
+					"type": "button",
+					"top": 539,
+					"left": 446,
+					"width": 307,
+					"height": 20,
+					"text": "Copy body to footer",
+					"focusable": false,
+					"method": "ObjectMethods/Button10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button11": {
+					"type": "button",
+					"top": 649,
+					"left": 446,
+					"width": 307,
+					"height": 20,
+					"text": "Copy footer to header",
+					"focusable": false,
+					"method": "ObjectMethods/Button11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button12": {
+					"type": "button",
+					"top": 679,
+					"left": 446,
+					"width": 307,
+					"height": 20,
+					"text": "Copy footer to body",
+					"focusable": false,
+					"method": "ObjectMethods/Button12.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button13": {
+					"type": "button",
+					"top": 709,
+					"left": 446,
+					"width": 307,
+					"height": 20,
+					"text": "Copy footer to footer",
+					"focusable": false,
+					"method": "ObjectMethods/Button13.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 250,
+					"left": 40,
+					"width": 370,
+					"height": 17,
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Template document"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 250,
+					"left": 787,
+					"width": 370,
+					"height": 17,
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Final document"
+				},
+				"TxtInfo4": {
+					"type": "text",
+					"top": 70,
+					"left": 210,
+					"width": 810,
+					"height": 110,
+					"sizingX": "grow",
+					"class": "HDI",
+					"textAlign": "left",
+					"text": "I have created a 4D WritePro template.\r\rThis template has a header and a footer.\r\r=> I want to be able to copy any frame of my template to any frame of a final document."
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 575,
+					"left": 520,
+					"width": 160,
+					"height": 60,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Pictures/Right.svg"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box4": {
+					"type": "groupBox",
+					"top": 100,
+					"left": 830,
+					"width": 330,
+					"height": 270,
+					"sizingX": "move",
+					"fontWeight": "bold",
+					"text": "Header reference"
+				},
+				"Group Box5": {
+					"type": "groupBox",
+					"top": 490,
+					"left": 830,
+					"width": 330,
+					"height": 270,
+					"sizingX": "move",
+					"sizingY": "move",
+					"fontWeight": "bold",
+					"text": "Footer reference"
+				},
+				"Group Box3": {
+					"type": "groupBox",
+					"top": 380,
+					"left": 460,
+					"width": 350,
+					"height": 100,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"fontWeight": "bold",
+					"text": "WP Get body"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 100,
+					"left": 460,
+					"width": 350,
+					"height": 270,
+					"sizingX": "move",
+					"fontWeight": "bold",
+					"text": "WP Get header"
+				},
+				"WPwidget": {
+					"type": "subform",
+					"top": 40,
+					"left": 1286,
+					"width": 260,
+					"height": 680,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"detailForm": "WP_Palette",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"Button2": {
+					"type": "button",
+					"top": 837,
+					"left": 296,
+					"width": 78,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Load",
+					"focusable": false,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 120,
+					"left": 840,
+					"width": 300,
+					"height": 240,
+					"sizingX": "move",
+					"dataSource": "vHeaderRange",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"scrollbarVertical": "automatic",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 442,
+					"left": 530,
+					"width": 224,
+					"height": 20,
+					"sizingX": "move",
+					"text": "Get body",
+					"focusable": false,
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rheader0": {
+					"type": "radio",
+					"top": 140,
+					"left": 480,
+					"width": 140,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "rheader0",
+					"text": "main header",
+					"focusable": false,
+					"radioGroup": "Group16",
+					"method": "ObjectMethods/rheader0.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rheader1": {
+					"type": "radio",
+					"top": 160,
+					"left": 480,
+					"width": 140,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "rheader1",
+					"text": "wk first header",
+					"focusable": false,
+					"radioGroup": "Group16",
+					"method": "ObjectMethods/rheader1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rheader2": {
+					"type": "radio",
+					"top": 180,
+					"left": 480,
+					"width": 140,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "rheader2",
+					"text": "wk left header",
+					"focusable": false,
+					"radioGroup": "Group16",
+					"method": "ObjectMethods/rheader2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rheader3": {
+					"type": "radio",
+					"top": 200,
+					"left": 480,
+					"width": 140,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "rheader3",
+					"text": "wk right header",
+					"focusable": false,
+					"radioGroup": "Group16",
+					"method": "ObjectMethods/rheader3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rheader4": {
+					"type": "radio",
+					"top": 250,
+					"left": 480,
+					"width": 140,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "rheader4",
+					"text": "based on range",
+					"focusable": false,
+					"radioGroup": "Group16",
+					"method": "ObjectMethods/rheader4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 490,
+					"left": 460,
+					"width": 350,
+					"height": 270,
+					"sizingX": "move",
+					"sizingY": "move",
+					"fontWeight": "bold",
+					"text": "WP Get footer"
+				},
+				"rfooter0": {
+					"type": "radio",
+					"top": 530,
+					"left": 480,
+					"width": 140,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "rfooter0",
+					"text": "main footer",
+					"focusable": false,
+					"radioGroup": "Group15",
+					"method": "ObjectMethods/rfooter0.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rfooter1": {
+					"type": "radio",
+					"top": 550,
+					"left": 480,
+					"width": 140,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "rfooter1",
+					"text": "wk first footer",
+					"focusable": false,
+					"radioGroup": "Group15",
+					"method": "ObjectMethods/rfooter1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rfooter2": {
+					"type": "radio",
+					"top": 570,
+					"left": 480,
+					"width": 140,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "rfooter2",
+					"text": "wk left footer",
+					"focusable": false,
+					"radioGroup": "Group15",
+					"method": "ObjectMethods/rfooter2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rfooter3": {
+					"type": "radio",
+					"top": 590,
+					"left": 480,
+					"width": 140,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "rfooter3",
+					"text": "wk right footer",
+					"focusable": false,
+					"radioGroup": "Group15",
+					"method": "ObjectMethods/rfooter3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rfooter4": {
+					"type": "radio",
+					"top": 640,
+					"left": 480,
+					"width": 140,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "rfooter4",
+					"text": "based on range",
+					"focusable": false,
+					"radioGroup": "Group15",
+					"method": "ObjectMethods/rfooter4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 165,
+					"left": 660,
+					"width": 140,
+					"height": 40,
+					"sizingX": "move",
+					"textAlign": "left",
+					"fontTheme": "additional",
+					"text": "Based on document\r(section 1 if many)"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 250,
+					"left": 660,
+					"width": 140,
+					"height": 38,
+					"sizingX": "move",
+					"textAlign": "left",
+					"fontTheme": "additional",
+					"text": "Range based on\rcurrent selection"
+				},
+				"Line": {
+					"type": "line",
+					"top": 140,
+					"left": 640,
+					"height": 80,
+					"sizingX": "move",
+					"stroke": "#696969"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 555,
+					"left": 660,
+					"width": 140,
+					"height": 40,
+					"sizingX": "move",
+					"sizingY": "move",
+					"textAlign": "left",
+					"fontTheme": "additional",
+					"text": "Based document\r(section 1 if many)"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 640,
+					"left": 660,
+					"width": 140,
+					"height": 38,
+					"sizingX": "move",
+					"sizingY": "move",
+					"textAlign": "left",
+					"fontTheme": "additional",
+					"text": "Range based on\rcurrent selection"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 530,
+					"left": 640,
+					"height": 80,
+					"sizingX": "move",
+					"sizingY": "move",
+					"stroke": "#696969"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 405,
+					"left": 480,
+					"width": 330,
+					"height": 29,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"textAlign": "left",
+					"fontTheme": "additional",
+					"text": "This command is only based on the document."
+				},
+				"Oval": {
+					"type": "oval",
+					"top": 123,
+					"left": 780,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"fill": "#00FFFF"
+				},
+				"Oval1": {
+					"type": "oval",
+					"top": 513,
+					"left": 780,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"fill": "#FFFF00"
+				},
+				"HeaderAlertIcon": {
+					"type": "rectangle",
+					"top": 323,
+					"left": 472,
+					"width": 23,
+					"height": 25,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"fill": "transparent",
+					"stroke": "#FF0000",
+					"strokeWidth": 3,
+					"borderRadius": 5
+				},
+				"HeaderAlertText": {
+					"type": "text",
+					"top": 328,
+					"left": 502,
+					"width": 290,
+					"height": 17,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"textAlign": "left",
+					"text": "No such header in this document!"
+				},
+				"FooterAlertIcon": {
+					"type": "rectangle",
+					"top": 713,
+					"left": 472,
+					"width": 23,
+					"height": 25,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"fill": "transparent",
+					"stroke": "#FF0000",
+					"strokeWidth": 3,
+					"borderRadius": 5
+				},
+				"FooterAlertText": {
+					"type": "text",
+					"top": 718,
+					"left": 502,
+					"width": 290,
+					"height": 17,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"textAlign": "left",
+					"text": "No such footer in this document!"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 510,
+					"left": 840,
+					"width": 300,
+					"height": 240,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "vFooterRange",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"scrollbarVertical": "automatic",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Group Box6": {
+					"type": "groupBox",
+					"top": 380,
+					"left": 830,
+					"width": 330,
+					"height": 100,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"fontWeight": "bold",
+					"text": "Body reference"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 400,
+					"left": 840,
+					"width": 300,
+					"height": 70,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"dataSource": "vBodyRange",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"scrollbarVertical": "automatic",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box": {
+					"type": "groupBox",
+					"top": 270,
+					"left": 460,
+					"width": 580,
+					"height": 490,
+					"sizingX": "move",
+					"fontWeight": "bold",
+					"text": "WP SET FRAME"
+				},
+				"FrameAlertIcon": {
+					"type": "rectangle",
+					"top": 563,
+					"left": 482,
+					"width": 23,
+					"height": 25,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"fill": "transparent",
+					"stroke": "#FF0000",
+					"strokeWidth": 3,
+					"borderRadius": 5
+				},
+				"FrameAlertText": {
+					"type": "text",
+					"top": 568,
+					"left": 512,
+					"width": 210,
+					"height": 17,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"textAlign": "left",
+					"text": "No such frame in this document!"
+				},
+				"rFrame0": {
+					"type": "radio",
+					"top": 420,
+					"left": 480,
+					"width": 340,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "rFrame0",
+					"text": "wk body",
+					"focusable": false,
+					"radioGroup": "Group21",
+					"method": "ObjectMethods/rFrame0.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rFrame9": {
+					"type": "radio",
+					"top": 320,
+					"left": 480,
+					"width": 340,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "rFrame9",
+					"text": "wk current section main header",
+					"focusable": false,
+					"radioGroup": "Group21",
+					"method": "ObjectMethods/rFrame9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rFrame10": {
+					"type": "radio",
+					"top": 460,
+					"left": 480,
+					"width": 340,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "rFrame10",
+					"text": "wk current section main footer",
+					"focusable": false,
+					"radioGroup": "Group21",
+					"method": "ObjectMethods/rFrame10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rFrame3": {
+					"type": "radio",
+					"top": 340,
+					"left": 480,
+					"width": 340,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "rFrame3",
+					"text": "wk current section first header",
+					"focusable": false,
+					"radioGroup": "Group21",
+					"method": "ObjectMethods/rFrame3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rFrame4": {
+					"type": "radio",
+					"top": 480,
+					"left": 480,
+					"width": 340,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "rFrame4",
+					"text": "wk current section first footer",
+					"focusable": false,
+					"radioGroup": "Group21",
+					"method": "ObjectMethods/rFrame4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rFrame5": {
+					"type": "radio",
+					"top": 360,
+					"left": 480,
+					"width": 340,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "rFrame5",
+					"text": "wk current section left header",
+					"focusable": false,
+					"radioGroup": "Group21",
+					"method": "ObjectMethods/rFrame5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rFrame6": {
+					"type": "radio",
+					"top": 500,
+					"left": 480,
+					"width": 340,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "rFrame6",
+					"text": "wk current section left footer",
+					"focusable": false,
+					"radioGroup": "Group21",
+					"method": "ObjectMethods/rFrame6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rFrame7": {
+					"type": "radio",
+					"top": 380,
+					"left": 480,
+					"width": 340,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "rFrame7",
+					"text": "wk current section right header",
+					"focusable": false,
+					"radioGroup": "Group21",
+					"method": "ObjectMethods/rFrame7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rFrame8": {
+					"type": "radio",
+					"top": 520,
+					"left": 480,
+					"width": 340,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "rFrame8",
+					"text": "wk current section right footer",
+					"focusable": false,
+					"radioGroup": "Group21",
+					"method": "ObjectMethods/rFrame8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 616,
+					"left": 480,
+					"width": 300,
+					"height": 19,
+					"sizingX": "move",
+					"text": "wk current page header",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 649,
+					"left": 480,
+					"width": 300,
+					"height": 19,
+					"sizingX": "move",
+					"text": "wk current page footer",
+					"focusable": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 355,
+					"left": 860,
+					"width": 140,
+					"height": 40,
+					"sizingX": "move",
+					"textAlign": "left",
+					"fontTheme": "additional",
+					"text": "Based on document\r(section 1 if many)"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 630,
+					"left": 860,
+					"width": 140,
+					"height": 38,
+					"sizingX": "move",
+					"textAlign": "left",
+					"fontTheme": "additional",
+					"text": "Based on\rcurrent selection"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 320,
+					"left": 840,
+					"height": 220,
+					"sizingX": "move",
+					"stroke": "#696969"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 610,
+					"left": 840,
+					"height": 80,
+					"sizingX": "move",
+					"stroke": "#696969"
+				},
+				"TxtInfo5": {
+					"type": "text",
+					"top": 110,
+					"left": 480,
+					"width": 660,
+					"height": 140,
+					"sizingX": "move",
+					"class": "HDI",
+					"textAlign": "left",
+					"text": "<- Click anywhere in the document… the command \"WP Get Frame\" will be executed to detect which is the current frame.\r\r\rClick any frame selector below to set the carret inside the chosen frame.\r(if the frame does not exist in this document, the command does nothing.)"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group16": [
+				"rheader0",
+				"rheader1",
+				"rheader2",
+				"rheader3",
+				"rheader4"
+			],
+			"Group15": [
+				"rfooter0",
+				"rfooter1",
+				"rfooter2",
+				"rfooter3",
+				"rfooter4"
+			],
+			"Group21": [
+				"rFrame0",
+				"rFrame9",
+				"rFrame10",
+				"rFrame3",
+				"rFrame4",
+				"rFrame5",
+				"rFrame6",
+				"rFrame7",
+				"rFrame8"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"TxtInfo3",
+					"TxtInfo4",
+					"TxtInfo5"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}
